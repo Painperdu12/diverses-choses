@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include <stdio.h>
+
+#include "../entity/entity.h"
+
+int main(void) {
+
+	entity_t entity = { };
+	initializeEntity(&entity);
+	printEntity(entity);
+	setEntityPosition(&entity, 20, 3);
+	printEntity(entity);
+	addEntityPosition(&entity, -2, 3);
+	printEntity(entity);
+
+	return 0;
+}

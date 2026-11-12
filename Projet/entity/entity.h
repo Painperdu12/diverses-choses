@@ -1,0 +1,25 @@
+/*
+ * entity.h
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#ifndef ENTITY_H_
+#define ENTITY_H_
+#include <stdint.h>
+
+struct Entity {
+	uint8_t id;
+	int16_t xPos;
+	int16_t yPos;
+};
+
+typedef struct Entity entity_t;
+
+void initializeEntity(entity_t*);
+void setEntityPosition(entity_t*, int16_t, int16_t);
+void addEntityPosition(entity_t*, int16_t, int16_t);
+void printEntity(entity_t);
+
+#endif /* ENTITY_H_ */

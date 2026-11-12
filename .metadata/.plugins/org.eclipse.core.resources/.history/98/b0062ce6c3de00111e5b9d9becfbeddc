@@ -1,0 +1,28 @@
+/*
+ * vec3d.h
+ *
+ *  Created on: 12 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#ifndef MATH_VEC3D_H_
+#define MATH_VEC3D_H_
+
+struct Vec3D {
+	double x;
+	double y;
+	double z;
+};
+
+typedef struct Vec3D vec3d_t;
+
+void setVecValues(vec3d_t *, double, double, double);
+double lenghtVec(vec3d_t);
+double lenghtVecSqrd(vec3d_t);
+void normalizeVec(vec3d_t *);
+void addVec(vec3d_t*, double, double, double);
+void subVec(vec3d_t*, double, double, double);
+void multiplyVec(vec3d_t*, double, double, double);
+void divideVec(vec3d_t*, double, double, double);
+
+#endif /* MATH_VEC3D_H_ */

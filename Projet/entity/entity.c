@@ -1,0 +1,34 @@
+/*
+ * entity.c
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "../entity/entity.h"
+
+#include <stdio.h>
+
+void initializeEntity(entity_t *entity) {
+	static int counter = -1;
+
+	entity->id = ++counter;
+	entity->xPos = 0;
+	entity->yPos = 0;
+}
+
+void setEntityPosition(entity_t *entity, int16_t xPos, int16_t yPos) {
+	entity->xPos = xPos;
+	entity->yPos = yPos;
+}
+
+void addEntityPosition(entity_t *entity, int16_t xPos, int16_t yPos) {
+	entity->xPos += xPos;
+	entity->yPos += yPos;
+}
+
+void printEntity(entity_t entity) {
+	printf("Entity informations [%d]: \n", entity.id);
+	printf(" - X position: %d\n", entity.xPos);
+	printf(" - Y position: %d\n", entity.yPos);
+}

@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	printf("Hello, World!\n");
+
+	return 0;
+}

@@ -1,0 +1,10 @@
+/*
+ * stack.c
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "stack.h"
+#include <stdio.c>
+

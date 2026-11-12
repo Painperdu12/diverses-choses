@@ -1,0 +1,24 @@
+/*
+ * vec3d.c
+ *
+ *  Created on: 12 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "vec3d.h"
+#include <math.h>
+
+void setVecValues(vec3d_t *vec, double x, double y, double z) {
+	vec->x = x;
+	vec->y = y;
+	vec->z = z;
+}
+
+double lenghtVecSqrd(vec3d_t vec) {
+	return vec.x * vec.x + vec.y * vec.y + vec.z * vec.z;
+}
+
+double lenghtVec(vec3d_t vec) {
+	return sqrt(lenghtVecSqrd(vec));
+}
+

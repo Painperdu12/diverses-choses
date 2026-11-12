@@ -1,0 +1,72 @@
+/*
+ * vec3d.c
+ *
+ *  Created on: 12 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "vec3d.h"
+#include <math.h>
+
+void setVecValues(vec3d_t *vec, double x, double y, double z) {
+	vec->x = x;
+	vec->y = y;
+	vec->z = z;
+}
+
+double lenghtVecSqrd(vec3d_t vec) {
+	return vec.x * vec.x + vec.y * vec.y + vec.z * vec.z;
+}
+
+double lenghtVec(vec3d_t vec) {
+	return sqrt(lenghtVecSqrd(vec));
+}
+
+void normalizeVec(vec3d_t *vec) {
+	double lenght = lenghtVec(vec);
+	vec->x /= lenght;
+	vec->y /= lenght;
+	vec->z /= lenght;
+}
+
+void addVec(vec3d_t *vec, double x, double y, double z) {
+	vec->x += x;
+	vec->y += y;
+	vec->z += z;
+}
+
+void subVec(vec3d_t *vec, double x, double y, double z) {
+	vec->x -= x;
+	vec->y -= y;
+	vec->z -= z;
+}
+
+void subVec(vec3d_t *vec, double value) {
+	vec->x -= value;
+	vec->y -= value;
+	vec->z -= value;
+}
+
+void multiplyVec(vec3d_t *vec, double x, double y, double z) {
+	vec->x *= x;
+	vec->y *= y;
+	vec->z *= z;
+}
+
+void multiplyVec(vec3d_t *vec, double value) {
+	vec->x *= value;
+	vec->y *= value;
+	vec->z *= value;
+}
+
+void divideVec(vec3d_t *vec, double x, double y, double z) {
+	vec->x /= x;
+	vec->y /= y;
+	vec->z /= z;
+}
+
+void divideVec(vec3d_t *vec, double value) {
+	vec->x /= value;
+	vec->y /= value;
+	vec->z /= value;
+}

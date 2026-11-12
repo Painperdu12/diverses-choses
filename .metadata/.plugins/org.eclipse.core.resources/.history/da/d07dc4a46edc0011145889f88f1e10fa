@@ -1,0 +1,18 @@
+/*
+ * stack.h
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#ifndef STACK_H_
+#define STACK_H_
+
+struct StackElement {
+	struct StackElement *next;
+	unsigned char value[];
+};
+
+typedef struct StackElement stack_t;
+
+#endif /* STACK_H_ */

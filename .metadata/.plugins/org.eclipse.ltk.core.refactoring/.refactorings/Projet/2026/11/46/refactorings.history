@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Projet/programme&apos; to &apos;entity&apos;" description="Rename resource &apos;programme&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="programme" name="entity" stamp="1794249913351" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Projet/queue/queue.h&apos; to &apos;stack.h&apos;" description="Rename resource &apos;queue.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="queue/queue.h" name="stack.h" stamp="1794250078473" updateReferences="true"/>
+</session>

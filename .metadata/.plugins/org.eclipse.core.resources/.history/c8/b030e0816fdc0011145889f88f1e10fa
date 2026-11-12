@@ -1,0 +1,18 @@
+/*
+ * stack.c
+ *
+ *  Created on: 9 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "stack.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+stack_t* stackCreate(void) {
+	return NULL;
+}
+
+stack_t* stackPush(stack_t *stack, unsigned char value[]) {
+
+}

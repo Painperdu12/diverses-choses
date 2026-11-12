@@ -1,0 +1,5 @@
+19:32:15 **** Incremental Build of configuration Debug for project Projet ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Projet.exe "entity\\entity.o" main.o "math\\vec3d.o" "queue\\stack.o" 
+Info: Nothing to build for Projet

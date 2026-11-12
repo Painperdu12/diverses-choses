@@ -1,0 +1,14 @@
+/*
+ * vec3d.c
+ *
+ *  Created on: 12 nov. 2026
+ *      Author: DENIZETMAXIME
+ */
+
+#include "vec3d.h"
+
+void setVectorValues(vec3d_t *vec, int x, int y, int z) {
+	vec->x = x;
+	vec->y = y;
+	vec->z = z;
+}
