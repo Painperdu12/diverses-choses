@@ -24,6 +24,7 @@ double lenghtVec(vec3d_t vec) {
 
 void normalizeVec(vec3d_t *vec) {
 	double lenght = lenghtVec(*vec);
+
 	vec->x /= lenght;
 	vec->y /= lenght;
 	vec->z /= lenght;
